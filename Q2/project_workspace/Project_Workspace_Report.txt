@@ -1,0 +1,5 @@
+1. mkdir -p Q2/project_workspace/docs Q2/project_workspace/src: Created a parent project workspace directory and nested subdirectories (docs and src) in a single command.
+2. umask: Checked the current umask value, which dictates the default permissions for any newly created files and directories.
+3. ls -ld (First time): Displayed the default permissions of the new workspace directory before applying security modifications.
+4. chmod 750: Changed the permissions so the owner has full rights (read/write/execute), the group has read/execute rights, and others have no access at all.
+5. ls -ld (Second time): Verified that the directory permissions successfully updated to drwxr-x---, ensuring project data is protected from unauthorized users.

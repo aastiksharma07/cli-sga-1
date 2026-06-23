@@ -1,0 +1,5 @@
+1. id: Displayed my username, user ID, and group memberships, confirming my current account access.
+2. echo $SHELL: Verified the current shell program running my terminal environment.
+3. pwd: Printed my current working directory to confirm my exact location in the filesystem.
+4. ls -la: Listed all files and directories, including hidden ones, inside my current workspace.
+5. ping -c 4 google.com: Sent 4 network packets to an external server, successfully verifying active internet connectivity.

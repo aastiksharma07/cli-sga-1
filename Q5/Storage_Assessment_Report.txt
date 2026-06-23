@@ -1,0 +1,3 @@
+Storage devices are healthy with sufficient space. Inode utilization is low across mounted file systems. Recommendation: Implement automated alerts if disk usage exceeds 80% capacity.
+Note: As this environment is running natively on macOS, the Linux-specific 'lsblk' utility threw a command not found error. I utilized the macOS equivalent 'diskutil list' alongside 'df' to successfully complete this assessment.
+

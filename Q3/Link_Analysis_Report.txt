@@ -1,0 +1,5 @@
+1. echo ... > original_file.txt: Created a standard text file containing a simple string to serve as our base file.
+2. ln & ln -s: Created a hard link (pointing directly to the file's inode) and a soft link (acting as a shortcut pointing to the file's path).
+3. ls -li: Displayed the inode numbers. I observed that the original file and the hard link share the exact same inode number, while the soft link has a completely different one.
+4. rm original_file.txt: Deleted the original source file to test the resilience of both links.
+5. cat (Testing links): The hard link successfully displayed the data because its underlying inode still exists on the disk. The soft link failed and threw a "No such file or directory" error because the path it was pointing to was deleted.
